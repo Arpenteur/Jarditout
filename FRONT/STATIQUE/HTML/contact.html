@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <img src="../images/jarditou_logo.jpg" alt="Une Jardinière poussant une brouette pleine de légumes et de fruits" title="Une Jardinière poussant une brouette pleine de légumes et de fruits" width="400" height="100">
+            <p>
+                la qualité depuis 70ans.
+            </p>
+    
+        </header>
+    
+        <nav>
+            <ul type="disc">
+                <li><a href="index.html#Accueil">Accueil</a></li>
+                <li><a href="tableau.html#tableau">Tableau</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div>
+            <img src="../images/promotion.jpg" alt="Promotion sur les lames de terrasse" title="Promotion sur les lames de terrasse" height="150">
+        </div>
+    
+        <h2 id="Contact">Contact</h2>
+        <hr>
+        <p>*ces zones sont obligatoires</p>
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <form action="destination.php" method="post">
+                
+                <div>
+                    <label for="nom">Votre nom* :</label>
+                    <input type="text" size="25" maxlength="25">
+                </div>
+
+                <div>
+                    <label for="prenom">votre prénom* :</label>
+                    <input type="text" size="25" maxlength="25">
+                </div>
+
+                <div>
+                    <label for="sexe">Sexe* :</label>
+                    <input type="radio" name="sexe">Féminin
+                    <input type="radio" name="sexe">Masculin
+                </div>
+
+                <div>
+                    <label for="date">Date de naissance* :</label>
+                    <input type="date" name="ddn" id="date" >
+                </div>
+                
+                <div>
+                    <label for="CodePostal">Code postal* :</label>
+                    <input type="text" name="CodePostal" size="25" maxlength="6">
+                </div>
+
+                <div>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" size="25" maxlength="150">
+                </div>
+
+                <div>
+                    <label for="Ville">Ville :</label>
+                    <input type="text" name="Ville" size="25" maxlength="25">
+                </div>
+
+                <div>
+                    <label for="email">Email* :</label>
+                    <input type="text" name="email" size="25" maxlength="32">
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre demande</legend>
+            <form action="destination.php" method="post">
+                
+                <div>
+                <label for="demande"></label>
+                <select name="demande" id="demande">
+                    <option value="None" selected>Veuillez séléctionner un sujet</option>
+                    <option value="Commandes">Mes commandes</option>
+                    <option value="Question">Question sur un produit</option>
+                    <option value="Reclamation">Réclamation</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="Question">Votre question* :</label>
+                    <textarea name="Question" id="question" cols="30" rows="2"></textarea>
+                </div>
+            </form>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="RGPD">* J'accepte le traitement informatique de ce formulaire.
+        </div>
+        <div>
+            <input type="submit" value="Envoyer">
+            <input type="submit" value="Annuler">
+        </div>
+    </body>
+    <hr>
+    <footer>
+        <ul>
+            <li>Mention légales</li>
+            <li>Horaires</li>
+            <li>Plan du site</li>
+        </ul>
+    </footer>
+</html>
