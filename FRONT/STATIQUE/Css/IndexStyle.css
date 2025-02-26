@@ -112,4 +112,8 @@ footer ul li a{
         display: flex;
         flex-direction: column;
     }
+
+    article, aside{
+        width: 100%;
+    }
 }
