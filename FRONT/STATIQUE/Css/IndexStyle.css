@@ -99,3 +99,17 @@ footer ul li{
 footer ul li a{
     color: #fff;
 }
+
+
+
+@media  (max-width: 768px){
+    .wallpaper{
+        background-size: contain;
+        height: 100px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+}
